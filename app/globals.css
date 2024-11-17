@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 39 38% 97%;
+  --foreground: 0 0% 12%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 12%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 12%;
+  
+  --primary: 348 79% 37%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 39 38% 97%;
+  --secondary-foreground: 348 79% 37%;
+  
+  --muted: 39 38% 94%;
+  --muted-foreground: 348 79% 37%;
+  
+  --accent: 348 79% 37%;
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 348 79% 37%;
+  --input: 348 79% 37%;
+  --ring: 348 79% 37%;
+
+  --radius: 0rem;
+}
+
+.dark {
+  --background: 348 79% 10%;
+  --foreground: 39 38% 97%;
+  
+  --card: 348 79% 15%;
+  --card-foreground: 39 38% 97%;
+  
+  --popover: 348 79% 15%;
+  --popover-foreground: 39 38% 97%;
+  
+  --primary: 348 79% 37%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 348 79% 15%;
+  --secondary-foreground: 39 38% 97%;
+  
+  --muted: 348 79% 20%;
+  --muted-foreground: 39 38% 87%;
+  
+  --accent: 348 79% 37%;
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 39 38% 97%;
+  
+  --border: 348 79% 37%;
+  --input: 348 79% 37%;
+  --ring: 348 79% 37%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.hero-pattern {
+  background-color: #f8f4f0;
+  background-image: radial-gradient(#9e1b32 0.5px, #f8f4f0 0.5px);
+  background-size: 10px 10px;
+}
