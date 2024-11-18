@@ -1,17 +1,16 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { Session } from 'next-auth';
 
-export async function GET(
-  request: Request,
-  { params }: { params: { id: string } }
-) {
+export async function GET(request: NextRequest, context: { params: { id: string } }) {
+  const { id } = context.params; // Access `id` directly from `context.params`
+
   try {
     const event = await prisma.event.findUnique({
       where: {
-        id: params.id,
+        id,
       },
     });
 
@@ -24,6 +23,7 @@ export async function GET(
 
     return NextResponse.json(event);
   } catch (error) {
+    console.error('Failed to fetch event:', error); // Log the error for debugging
     return NextResponse.json(
       { error: 'Failed to fetch event' },
       { status: 500 }
@@ -32,13 +32,13 @@ export async function GET(
 }
 
 export async function PUT(
-  request: Request,
-  { params }: { params: { id: string } }
+  request: NextRequest,
+  { params }: { params: { id: string } } // Correctly typed params
 ) {
   try {
-    const session = await getServerSession(authOptions);
-    
-    if (!session || session.user.role !== 'ADMIN') {
+    const session = (await getServerSession(authOptions)) as Session | null;
+
+    if (!session?.user?.role || session.user.role !== 'ADMIN') {
       return NextResponse.json(
         { error: 'Unauthorized' },
         { status: 401 }
@@ -63,13 +63,13 @@ export async function PUT(
 }
 
 export async function DELETE(
-  request: Request,
-  { params }: { params: { id: string } }
+  request: NextRequest,
+  { params }: { params: { id: string } } // Correctly typed params
 ) {
   try {
-    const session = await getServerSession(authOptions);
-    
-    if (!session || session.user.role !== 'ADMIN') {
+    const session = (await getServerSession(authOptions)) as Session | null;
+
+    if (!session?.user?.role || session.user.role !== 'ADMIN') {
       return NextResponse.json(
         { error: 'Unauthorized' },
         { status: 401 }
