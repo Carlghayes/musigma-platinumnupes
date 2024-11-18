@@ -1,4 +1,38 @@
-- name: Install dependencies
+name: Deploy to Amazon ECS
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  AWS_REGION: us-east-1
+  ECR_REPOSITORY: fraternity-app
+  ECS_SERVICE: fraternity-service
+  ECS_CLUSTER: fraternity-cluster
+  ECS_TASK_DEFINITION: fraternity-task
+  CONTAINER_NAME: fraternity-app
+
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
       run: |
         npm ci
         npm install -g @testing-library/jest-dom
