@@ -8,8 +8,8 @@ import Footer from '@/components/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Alpha Beta Gamma Fraternity',
-  description: 'Official website of the Alpha Beta Gamma Fraternity',
+  title: 'Mu Sigma Chapter of Kappa Alpha Psi Fraternity, Inc.',
+  description: 'Official website of the Platinum Nupes',
 };
 
 export default function RootLayout({

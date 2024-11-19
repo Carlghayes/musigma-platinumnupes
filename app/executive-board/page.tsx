@@ -4,22 +4,40 @@ import { Card, CardContent } from "@/components/ui/card";
 const executiveBoard = [
   {
     name: "Michael Thompson",
-    position: "President",
+    position: "Polemarch",
+    bio: "Senior Economics major, focused on strengthening our community engagement.",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+  },
+  {
+    name: "John Stevens",
+    position: "Vice Polemarch",
     bio: "Senior Economics major, focused on strengthening our community engagement.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
   },
   {
     name: "David Rodriguez",
-    position: "Vice President",
+    position: "Exchequer",
     bio: "Junior Business major, passionate about member development and mentorship.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
   },
   {
-    name: "James Wilson",
-    position: "Treasurer",
+    name: "Chris Keener",
+    position: "Keeper of Records",
     bio: "Senior Finance major, managing our chapter's finances and fundraising initiatives.",
     image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
   },
+  {
+    name: "Lamar Johnson",
+    position: "Historian",
+    bio: "Senior Finance major, managing our chapter's finances and fundraising initiatives.",
+    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+  },
+  {
+    name: "Will Jones",
+    position: "Strategus",
+    bio: "Senior Finance major, managing our chapter's finances and fundraising initiatives.",
+    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+  }
 ];
 
 export default function ExecutiveBoardPage() {

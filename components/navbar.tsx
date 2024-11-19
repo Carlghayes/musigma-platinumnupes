@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center space-x-2">
           <Shield className="h-6 w-6 text-primary" />
-          <span className="font-bold text-xl">ΑΒΓ</span>
+          <span className="font-bold text-xl">MuSig.</span>
         </Link>
         <NavigationMenu className="mx-6">
           <NavigationMenuList>
@@ -58,7 +58,7 @@ export default function Navbar() {
             className="text-base font-medium"
             asChild
           >
-            <Link href="https://members.abg-fraternity.org">Members Portal</Link>
+            <Link href="https://members.abg-fraternity.org">Members Only</Link>
           </Button>
         </div>
       </div>

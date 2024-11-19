@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex justify-center">
           <Link href="/" className="flex items-center space-x-2">
             <Shield className="h-6 w-6" />
-            <span className="font-bold">ΑΒΓ</span>
+            <span className="font-bold">MuSig.</span>
           </Link>
         </div>
         <nav
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </nav>
         <p className="mt-8 text-center text-xs leading-5 text-muted-foreground">
-          &copy; {new Date().getFullYear()} Alpha Beta Gamma Fraternity. All rights
+          &copy; {new Date().getFullYear()} Mu Sigma Chapter of Kappa Alpha Psi Fraternity, Inc. All rights
           reserved.
         </p>
       </div>

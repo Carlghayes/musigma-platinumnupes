@@ -13,7 +13,7 @@ import {
 const lineageData = [
   {
     lineName: "Founding Fathers",
-    crossDate: "Spring 1950",
+    crossDate: "Spring 1985",
     members: ["John Smith", "Michael Johnson", "William Brown"],
   },
   {

@@ -18,7 +18,7 @@ export default function Hero() {
               />
             </div>
             <h1 className="text-6xl font-bold tracking-tight sm:text-7xl">
-              Alpha Beta Gamma
+              The Mu Sigma Chapter of Kappa Alpha Psi Fraternity, Inc.
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
               Building Leaders, Creating Bonds, Serving Community
