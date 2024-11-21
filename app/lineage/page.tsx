@@ -19,7 +19,7 @@ const lineageData = [
   {
     lineName: "Lords of Discipline",
     crossDate: "Spring 1987",
-    members: ["Tony Newsom", "Calvin Neal", "Tony Wylie", "Jerry Woods", "Garry Matthews"],
+    members: ["Tony Newsom", "Calvin Neal", "Tony Wyllie", "Jerry Woods", "Garry Matthews"],
   },
   {
     lineName: "2 The Administrative Way",
@@ -107,7 +107,7 @@ const lineageData = [
     members: ["Charles Adams", "John Mitchell", "Anthony Fobbs", "Tim McClelland", "Olisa Ogbor", "Ronnie Cauley", "Josh Pemberton"],
   },
   {
-    lineName: "78 Usual Suspekts",
+    lineName: "7 Usual Suspekts",
     crossDate: "Spring 2007",
     members: ["Greg Phillips", "Aubrey Price", "Donovan Richardson", "Chris Garba", "Gerald Fonzie", "A'Doriyn Dixon", "Kyle Jacobs"],
   },
