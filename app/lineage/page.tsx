@@ -132,7 +132,7 @@ const lineageData = [
     members: ["Henry Wilson", "Yamill Acevedo", "Marqus Hawthorne", "Markel Johnson", "Sean McLaughlin", "JC Franklin", "Kendrick Papillion", "Dotwaun Harris", "Julian Young"],
   },
   {
-    lineName: "Spring 17",
+    lineName: "Kritical Kondition",
     crossDate: "Spring 2017",
     members: ["Jesse Biles", "Aaron Foy", "Jordan Phillips", "Xavier Richard", "Jared Hamilton"],
   },
@@ -142,7 +142,7 @@ const lineageData = [
     members: ["Donald Satchell", "Jaylon Maxie", "Austin Hayes"],
   },
   {
-    lineName: "Spring 19",
+    lineName: "Kontrolled Khaos",
     crossDate: "Spring 2019",
     members: ["Joseph Simpson", "Jonathan Ellis", "Justin Garcia", "Kyron Hammond", "Josh Atkinson", "Jordan Myers", "Caleb Lawton", "Chris Moore", "Daylon Bell", "Alvin Brown"],
   },
