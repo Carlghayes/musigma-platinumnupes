@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
+import   { Card, CardContent } from "@/components/ui/card";
 import {
   Table,
   TableBody,
@@ -62,7 +62,7 @@ const lineageData = [
     members: ["Norjuan Austin", "Mark Shavers", "Chris Roberson", "Quan Harris", "Rod Sadberry", "Curtis Brooks", "Craig Stallings"],
   },
   {
-    lineName: "Platinum Playboys",
+    lineName: " 9 Platinum Playas",
     crossDate: "Fall 1997",
     members: ["Sean Bradley", "Brian Remo", "Larry Brooks", "Pepe Bridges", "Christopher Sam", "Roderick Jaquet", "Corey James", "Micah Love", "Ric Davis"],
   },
@@ -82,17 +82,12 @@ const lineageData = [
     members: ["Damian Mitchell", "Phillip Sutton", "Jarvis Woulward", "Paul Trinh", "Desmond Garrett", "David Shields", "Andre Key", "Trent Dews", "Milford Fontenot", "David Brown"],
   },
   {
-    lineName: "Generation X",
-    crossDate: "Spring 2001",
-    members: ["Jerome Colbert"],
-  },
-  {
     lineName: "The Untouchables",
     crossDate: "Fall 2001",
     members: ["Phillip Yates", "Otis Ellis"],
   },
   {
-    lineName: "10 Kuts of a Diamond",
+    lineName: "Ten Kuts of a Diamond",
     crossDate: "Fall 2002",
     members: ["Quasar Alexander", "Glenn Smith", "Phillip Chaney", "Todd Broussard", "Malcolm Watson", "Brandon Barrow", "Darryl Williams", "Fritz Beckworth", "James Prince", "Greg Johnson"],
   },
