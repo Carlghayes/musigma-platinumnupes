@@ -5,21 +5,10 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-
-interface NavMenuItem {
-  href: string;
-  label: string;
-  external?: boolean;
-}
-
-interface NavMenuProps {
-  label: string;
-  items: NavMenuItem[];
-}
+import { NavMenuProps, NavMenuItem } from "./types";
 
 export function NavMenu({ label, items }: NavMenuProps) {
   return (

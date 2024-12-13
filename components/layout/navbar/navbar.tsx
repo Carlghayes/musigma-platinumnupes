@@ -5,8 +5,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { NavLink } from "./nav-link";
 import { NavMenu } from "./nav-menu";
+import { NavRoute } from "./types";
 
-const routes = [
+const routes: NavRoute[] = [
   { href: "/", label: "Home" },
   { href: "/executive-board", label: "Executive Board" },
   { 
@@ -44,7 +45,11 @@ export default function Navbar() {
         <nav className="mx-6 flex items-center space-x-4 lg:space-x-6">
           {routes.map((route) => 
             'items' in route ? (
-              <NavMenu key={route.label} {...route} />
+              <NavMenu 
+                key={route.label} 
+                label={route.label} 
+                items={route.items} 
+              />
             ) : (
               <NavLink key={route.href} href={route.href}>
                 {route.label}
@@ -54,7 +59,7 @@ export default function Navbar() {
         </nav>
         <div className="ml-auto">
           <Button asChild>
-            <Link href="https://members.abg-fraternity.org">
+            <Link href="https://dev-app.platinumnupes.com">
               Members Only
             </Link>
           </Button>
