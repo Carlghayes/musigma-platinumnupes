@@ -125,7 +125,7 @@ export default function Navbar() {
             className="text-base font-medium"
             asChild
           >
-            <Link href="https://members.abg-fraternity.org">Members Only</Link>
+            <Link href="https://dev-app.platinumnupes.com">Members Only</Link>
           </Button>
         </div>
       </div>
